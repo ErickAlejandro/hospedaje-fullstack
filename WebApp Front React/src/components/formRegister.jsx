@@ -10,6 +10,7 @@ const FormComponent = () => {
   const [identification, setIdentification] = useState("");
   const [checkInDate, setCheckInDate] = useState("");
   const [checkOutDate, setCheckOutDate] = useState("");
+  const [formData, setFormData] = useState(null);
 
   useEffect(() => {
     // Fetch data from the given endpoint
@@ -35,13 +36,15 @@ const FormComponent = () => {
   };
 
   const handleSaveClick = () => {
-    // Save the input data when the "Save" button is clicked
-    console.log("Saved data:");
-    console.log("NumberRoom Id:", selectedRoomId);
-    console.log("Full Name:", fullName);
-    console.log("Identification:", identification);
-    console.log("Check-In Date:", checkInDate);
-    console.log("Check-Out Date:", checkOutDate);
+    const formData = {
+    IdRoom: selectedRoomId,
+    FullName: fullName,
+    DocumentIdentification: identification,
+    Entry: checkInDate,
+    Out: checkOutDate,
+  };
+
+    console.log("Form Data:", formData);
   };
 
 
