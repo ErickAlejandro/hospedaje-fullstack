@@ -1,0 +1,13 @@
+@api = http://192.168.1.21:3000/users
+
+
+GET {{api}}
+
+###
+POST {{api}}/currentRoutes
+Content-Type: application/json
+
+{
+    "latitud" : "6",
+    "longitud" : "3423422"
+}
