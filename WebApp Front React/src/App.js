@@ -1,5 +1,6 @@
 import "./App.css";
 import DataTable from "./components/DataTable";
+import TableRooms from "./components/TableRooms";
 import FormComponent from "./components/formRegister";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
@@ -33,6 +34,10 @@ function App() {
               element={<DataTable data={dataRegister} />}
             />
             <Route path="/formRegister" element={<FormComponent />} />
+            <Route
+              path="/TableRooms"
+              element={<TableRooms data={dataRegister} />}
+            />
           </Routes>
         </div>
       </Router>

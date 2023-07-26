@@ -13,6 +13,9 @@ const Navbar = () => {
         <li>
           <Link className='nav-link' to="/formRegister">Registro</Link>
         </li>
+        <li className='nav-item'>
+          <Link className='nav-link' to="/TableRooms">Habitaciones</Link>
+        </li>
       </ul>
     </nav>
   );
