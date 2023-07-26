@@ -35,4 +35,13 @@ Ejecute primeramente el API Back y luego el front y comience a usar el aplicatic
 - El back se ejecuta usando: ```npm run dev```
 - el front se ejecuta mediante: ```npm start```
 
+## Funcionamiento
+En el Front, el NavBar se tiene los enlaces que dirige a 3 modulos: Historial de Registros, El Registro como tal y Habitaciones
+
+En el *Historial* se podra tener un vistaso de todos lso registros de las personas que se han checkeado en el hotel.
+
+En *Registro*, tenemos el formulario que permite registrar a los clientes y sus habitaciones.
+
+Y por ultimo *Habitaciones*, este modulo permite desocupar las habitaciones cuando ya registren su salida o se presenten en recepcion *Lo ideal seria que se desocupen apenas salgan por medio del tiempo pero no tuve espacio para hacer pruebas*.
+
 ***Nota: De la misma manera hay Documentacion general para cada una de las partes.***
